@@ -1,70 +1,47 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
 
-## Available Scripts
+# Kalvium PROJECT BUILDER | REACT - QUIZ STAGE III - Connecting Components
 
-In the project directory, you can run:
+## Learning Goals
 
-### `npm start`
+In this exercise, the goal is to learn building a complete quiz app on a stage by stage basis:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- props and state,
+- how to work with event handlers.
+- how to use routes to connect different components with each other - (how to pass states from one component to the other)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Introduction
 
-### `npm test`
+We will continue to improve our code from where we left previously. We will work on connecting all the components with each other.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### PROGRESSION 1 | Connect Components:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Till now, we were only working with individual components. Now is the correct time to connect them.
+Here is a demo of how things should work:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/project-react-final-working.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+So, as you can see above -> 
+If I click on play button, I should be directed to the quiz game, and if I click on `finish` button, I should be directed to result page.
 
-### `npm run eject`
+***NOTE:*** Use routers to perform the task. ( Remember to install routers before importing them. )
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### PROGRESSION 2 | Calculate Score:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+So, once all the components are connected to each other, now is the correct time, to calculate the score as well.
+So, by now, we are only able to move from one question to the other. Now, your task is to be able to click on any option and based upon the correct answer of that question, you should be able to calculate the score.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+***Constraints:*** If a user clicks on a wrong option -> an alert should pop-up stating that: `wrong answer`, and
+                   If a user clicks on the right option -> an alert should pop-up stating that: `correct answer`
 
-## Learn More
+Once you click on the `finish` button (finish button was not added previously, you need to add a new button -> which will redirect the user to the result page), you should be able to reach to the result page, which displays the result for you, as shown below:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/project-react-routes-working.gif
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Happy Coding Kalvium ❤️!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git remote add origin https://github.com/Kalvium-Program/project-react-quiz-two-solution.git
